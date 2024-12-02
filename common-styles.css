@@ -1,0 +1,171 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #247ba0;
+}
+
+.header-wrapper > .title {
+    margin: 0;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    color: #f2f0ef;
+}
+
+.content-wrapper {
+    background-color: #6dd3ce;
+    padding: 100px;
+}
+
+.content-wrapper > .sections > .about-me {
+    color: #1f2421;
+}
+
+.hero-section > .hero-bg {
+    background-image: url(football.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f2f0ef;
+}
+
+.follow-button {
+    background-color: #f2f0ef;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.follow-button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.follow-button:hover {
+    background-color: #333;
+    color: #f2f0ef;
+}
+
+.follow-button:active {
+    transform: scale(0.95);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 10px; 
+    padding: 20px; 
+    background-color: #247ba0; 
+    border-radius: 8px; 
+}
+
+.gallery .img {
+    overflow: hidden; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.gallery .img img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.gallery .img:hover {
+    transform: scale(1.05); 
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); 
+    }
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-wrapper {
+    text-align: center;
+    max-width: 90%;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: #f2f0ef;
+    cursor: pointer;
+}
+
+#caption {
+    color: #f2f0ef;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 6px;
+    max-width: 90%;
+    margin: 10px auto 0 auto;
+}
+
+.spacer {
+    padding: 20px;
+}
+
+.hero-section-2 > .hero-bg-2 {
+    background-image: url(helaman.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    height: 500px;
+}
